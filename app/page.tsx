@@ -443,7 +443,7 @@ export default function Home() {
         <img src="/banner.webp" className="w-full h-full" />
       </section>
 
-      <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center">
+      <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center hidden">
         {/* Animated Gradient Background */}
         {/* <div className="absolute inset-0 animate-gradient bg-gradient-to-b from-[#cfd8ff] to-[#b5c3ff]"></div> */}
         <div className="absolute inset-0 animate-gradient"></div>
@@ -536,15 +536,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* <section>
-        <div className="service_card is_blue"> ... </div>
-        <div className="service_card is_white"> ... </div>
-        <div className="service_card is_yellow2"> ... </div>
-        <div className="service_card is_red"> ... </div>
-        <div className="service_card is_black"> ... </div>
-      </section> */}
-
+      
       <PriceSection/>
+
+{/* <section className="relative h-full w-full flex items-center justify-center bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden">
+
+   
+  <div className="absolute inset-0 pointer-events-none">
+    <div className="absolute -top-20 -left-20 w-96 h-96 bg-blue-200 rounded-full blur-[140px] opacity-50"></div>
+    <div className="absolute bottom-0 right-0 w-[420px] h-[420px] bg-blue-300 rounded-full blur-[180px] opacity-60"></div>
+  </div>
+
+  
+  <div className="relative z-10 container mx-auto px-10 lg:px-20 py-20 flex flex-col lg:flex-row items-center justify-between">
+
+    <div className="max-w-xl">
+      <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-[#0A1A44]">
+        AI Website Builder  
+        <br /> Build Smarter, Faster
+      </h1>
+
+      <p className="text-gray-600 text-lg leading-relaxed mb-8">
+        Generate fully designed websites in seconds using advanced AI tools — simple,
+        clean, and incredibly fast.
+      </p>
+
+      <button className="px-10 py-4 bg-blue-600 hover:bg-blue-700 transition-all rounded-xl text-white text-lg font-semibold shadow-lg">
+        Start Building
+      </button>
+    </div>
+
+     
+    <div className="lg:w-1/2 flex justify-center mt-10 lg:mt-0">
+      <img
+        src="https://img.freepik.com/free-vector/abstract-creative-website-hosting-illustration_23-2149227348.jpg"
+        className="w-[420px] lg:w-[520px] drop-shadow-[0_20px_40px_rgba(0,0,0,0.2)] rounded-xl animate-float"
+      />
+    </div>
+
+  </div>
+</section> */}
 
       
     </main>
