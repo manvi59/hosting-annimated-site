@@ -66,6 +66,7 @@
 
 import PriceSection from "./PriceSection.jsx"
 import Testimonials from "./Testimonials.jsx";
+import FAQSection from "./FAQSection.jsx"
 export default function Home() {
   return (
     <main className="min-h-screen w-full bg-white">
@@ -88,7 +89,9 @@ export default function Home() {
 
       {/* HERO SECTION */}
       {/* <section className="px-14 py-20 grid grid-cols-1 md:grid-cols-2 gap-10"> */}
-      <section className="px-14 py-20 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10">
+      <section className="px-14 py-20 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10"
+      style={{background:"#6456f7"}}
+      >
         {/* LEFT SIDE TEXT */}
         <div>
           {/* Tag */}
@@ -97,7 +100,7 @@ export default function Home() {
             <p className="text-sm">Available for New Projects</p>
           </div>
 
-          <h1 className="text-6xl md:text-6xl font-bold leading-tight mb-6">
+          <h1 className="text-6xl md:text-6xl text-white font-bold leading-tight mb-6">
             Global Hosting <br />
             agency digital partner
             <br />
@@ -121,7 +124,7 @@ export default function Home() {
         {/* RIGHT SIDE */}
         <div className="flex  justify-end ">
           <div className="flex-col mt-20">
-            <p className="text-lg leading-relaxed mb-6 text-black-700">
+            <p className="text-lg leading-relaxed mb-6 text-white">
               Wavespace is a global UX agency <br></br>that helps brands scale
               with fast,<br></br>
               high-performance digital experiences.
@@ -151,7 +154,7 @@ export default function Home() {
                 />
               </div>
 
-              <p className="text-gray-600">Loved by 500+ Founders</p>
+              <p className="text-gray-900">Loved by 500+ Founders</p>
             </div>
 
             <div className="flex items-center gap-3">
@@ -173,133 +176,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center">
-        <div className="absolute inset-0 animate-gradient bg-gradient-to-b from-[#cfd8ff] to-[#b5c3ff]"></div>
-
-        <div className="relative z-10 bg-white w-[85%] h-[520px] shadow-xl rounded-xl overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-b from-[#98a8ff] to-[#c7d1ff]"></div>
-
-          <div className="relative z-20 w-full h-full flex items-center justify-center">
-            <h1 className="absolute top-12 left-16 text-white text-7xl font-bold opacity-70 tracking-wide">
-              Host Web
-            </h1>
-
-            <p className="absolute left-16 top-28 text-white tracking-wider">
-              LUXURIOUS
-            </p>
-            <p className="absolute left-16 bottom-20 text-white">
-              ALL TIME BEST <br /> OFFERS
-            </p>
-
-            <p className="absolute right-10 top-25 text-white text-right">
-              Lorem ipsum dolor sit amet consectetur,<br></br> adipisicing elit.
-              Repellat qui perferendis
-              <br></br>consequatur magni saepe, est at ratione <br></br>eligendi
-              amet eaque sit consectetur <br></br>quas hic itaque totam
-              perspiciatis?
-            </p>
-            <p className="absolute right-16 bottom-20 text-white text-right">
-              CELEBRATE INDIVIDUALITY <br /> WITH UNIQUE OUTFITS
-            </p>
-
-            <p className="absolute bottom-12 text-white font-semibold bg-black/30 px-6 py-2 rounded-full">
-              SHOP NOW, SAVE MORE
-            </p>
-
-            <img src="/host.png" className="relative h-[420px] z-30" />
-          </div>
-        </div>
-      </section>
-      <section className="w-full py-20 px-6 md:px-14">
-        {/* Heading */}
-        <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900 mb-12">
-          Bold UX design, billion-dollar proof. We <br />
-          measure impact,{" "}
-          <span className="text-gray-500">not just ship pixels.</span>
-        </h1>
-
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Card 01 */}
-          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
-            <p className="text-gray-400 text-sm">/01</p>
-            <div>
-              <h2 className="text-4xl font-bold">92%</h2>
-              <p className="text-gray-500 mt-2 text-sm">
-                client satisfaction <br /> in post-project reviews.
-              </p>
-            </div>
-          </div>
-
-          {/* Card 02 */}
-          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
-            <p className="text-gray-400 text-sm">/02</p>
-            <div>
-              <h2 className="text-4xl font-bold">$10B+</h2>
-              <p className="text-gray-500 mt-2 text-sm">
-                valuation influenced <br /> by our design
-              </p>
-            </div>
-          </div>
-
-          {/* Card 03 */}
-          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
-            <p className="text-gray-400 text-sm">/03</p>
-            <div>
-              <h2 className="text-4xl font-bold">2019</h2>
-              <p className="text-gray-500 mt-2 text-sm">
-                Founded, 6 years <br /> of experience
-              </p>
-            </div>
-          </div>
-
-          {/* Card 04 */}
-          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between md:col-span-1">
-            <p className="text-gray-400 text-sm">/04</p>
-            <div>
-              <h2 className="text-4xl font-bold">25M+</h2>
-              <p className="text-gray-500 mt-2 text-sm">
-                monthly visits <br /> on client platforms
-              </p>
-            </div>
-          </div>
-
-          {/* Card 05 */}
-          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between md:col-span-2">
-            <p className="text-gray-400 text-sm">/05</p>
-            <div>
-              <h2 className="text-4xl font-bold">500+ global project</h2>
-              <p className="text-gray-500 mt-2 text-sm">
-                250+ testimonial with trusted by YC-backed, <br />
-                VC-funded, a16z, Sequoia
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center ">
-        {/* Animated Gradient Background */}
-        {/* <div className="absolute inset-0 animate-gradient bg-gradient-to-b from-[#cfd8ff] to-[#b5c3ff]"></div> */}
-        <div className="absolute inset-0 animate-gradient"></div>
-
-        {/* White Frame Container */}
-        <div className="relative z-10 bg-white w-[90%] h-[620px]  overflow-hidden">
-          {/* Inner gradient bg behind the video */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#98a8ff] to-[#c7d1ff]"></div>
-
-          {/* Video Full Cover */}
-          <video
-            src="/hosting.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          ></video>
-        </div>
-      </section>
-
-      <section className="w-full py-20 px-6 md:px-14 bg-white">
+       <section className="w-full py-20 px-6 md:px-14 bg-white">
         {/* Heading */}
         <h1 className="text-4xl md:text-5xl font-semibold text-center leading-tight text-gray-900 mb-10">
           Partner with a full design team <br />
@@ -460,6 +337,99 @@ export default function Home() {
           </div>
         </div>
       </section>
+         <section className="w-full py-20 px-6 md:px-14">
+        {/* Heading */}
+        <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900 mb-12">
+          Bold UX design, billion-dollar proof. We <br />
+          measure impact,{" "}
+          <span className="text-gray-500">not just ship pixels.</span>
+        </h1>
+
+        {/* Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {/* Card 01 */}
+          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
+            <p className="text-gray-400 text-sm">/01</p>
+            <div>
+              <h2 className="text-4xl font-bold">92%</h2>
+              <p className="text-gray-500 mt-2 text-sm">
+                client satisfaction <br /> in post-project reviews.
+              </p>
+            </div>
+          </div>
+
+          {/* Card 02 */}
+          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
+            <p className="text-gray-400 text-sm">/02</p>
+            <div>
+              <h2 className="text-4xl font-bold">$10B+</h2>
+              <p className="text-gray-500 mt-2 text-sm">
+                valuation influenced <br /> by our design
+              </p>
+            </div>
+          </div>
+
+          {/* Card 03 */}
+          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
+            <p className="text-gray-400 text-sm">/03</p>
+            <div>
+              <h2 className="text-4xl font-bold">2019</h2>
+              <p className="text-gray-500 mt-2 text-sm">
+                Founded, 6 years <br /> of experience
+              </p>
+            </div>
+          </div>
+
+          {/* Card 04 */}
+          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between md:col-span-1">
+            <p className="text-gray-400 text-sm">/04</p>
+            <div>
+              <h2 className="text-4xl font-bold">25M+</h2>
+              <p className="text-gray-500 mt-2 text-sm">
+                monthly visits <br /> on client platforms
+              </p>
+            </div>
+          </div>
+
+          {/* Card 05 */}
+          <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between md:col-span-2">
+            <p className="text-gray-400 text-sm">/05</p>
+            <div>
+              <h2 className="text-4xl font-bold">500+ global project</h2>
+              <p className="text-gray-500 mt-2 text-sm">
+                250+ testimonial with trusted by YC-backed, <br />
+                VC-funded, a16z, Sequoia
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    
+    
+      <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center hidden ">
+        {/* Animated Gradient Background */}
+        {/* <div className="absolute inset-0 animate-gradient bg-gradient-to-b from-[#cfd8ff] to-[#b5c3ff]"></div> */}
+        <div className="absolute inset-0 animate-gradient"></div>
+
+        {/* White Frame Container */}
+        <div className="relative z-10 bg-white w-[90%] h-[620px]  overflow-hidden">
+          {/* Inner gradient bg behind the video */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#98a8ff] to-[#c7d1ff]"></div>
+
+          {/* Video Full Cover */}
+          <video
+            src="/hosting.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          ></video>
+        </div>
+      </section>
+
+      
 
       <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center ">
         <img src="/banner.webp" className="w-full h-full" />
@@ -540,6 +510,72 @@ export default function Home() {
 
       
       <PriceSection/>
+
+      {/* <section className="w-full py-20 bg-gradient-to-b from-[#0b0f19] to-[#0b0f19]/95 text-white"> */}
+      <section className="w-full py-20 ">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        {/* Heading */}
+        <div className="text-center mb-14">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            Dedicated CPU Servers  
+          </h2>
+          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
+            Experience unmatched performance with powerful, isolated CPU cores built 
+            to handle heavy workloads, high-traffic applications, and enterprise-grade computing.
+          </p>
+        </div>
+
+        {/* Feature Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {[
+            {
+              title: "100% Dedicated CPU Cores",
+              desc: "No shared resources. Your CPU power is fully reserved for your workload."
+            },
+            {
+              title: "High-Clock Speed Processors",
+              desc: "Optimized for databases, real-time apps, and computation-heavy workloads."
+            },
+            {
+              title: "NVMe SSD Storage",
+              desc: "Ultra-fast NVMe helps ensure lightning-fast read/write speed."
+            },
+            {
+              title: "DDOS + WAF Security",
+              desc: "Enterprise-grade protection against threats & attacks."
+            },
+            {
+              title: "Unlimited Bandwidth",
+              desc: "No throttling. Perfect for large-scale users and expandable applications."
+            },
+            {
+              title: "1-Click Scaling",
+              desc: "Instantly increase CPU, RAM, and storage without downtime."
+            }
+          ].map((item, index) => (
+            <div
+              key={index}
+              className="bg-white/5 backdrop-blur shadow-2xl rounded-2xl p-7 border border-white/10 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300"
+            >
+              <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+              <p className="text-gray-300 text-sm leading-relaxed">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Pricing / CTA */}
+        <div className="mt-16 text-center">
+          <h3 className="text-3xl font-bold mb-4">Starting at just $39/mo</h3>
+          <p className="text-gray-300 max-w-xl mx-auto mb-8">
+            Perfect for developers, agencies, and growing businesses who need raw power and stability.
+          </p>
+
+          <button className="px-10 py-4 text-lg font-medium rounded-full bg-purple-600 hover:bg-purple-700 transition-all shadow-lg shadow-purple-600/30">
+            Get Your Dedicated CPU Server →
+          </button>
+        </div>
+      </div>
+    </section>
       
 
 {/* <section className="relative h-full w-full flex items-center justify-center bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden">
@@ -580,7 +616,236 @@ export default function Home() {
   </div>
 </section> */}
 
+ 
+    <section className="w-full py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+
+        {/* LEFT IMAGE WITH FLOATING CARDS */}
+        <div className="relative flex justify-center">
+          <div className="relative w-[360px] md:w-[420px] h-auto bg-gradient-to-b from-indigo-300 to-purple-300 p-1 rounded-3xl shadow-xl">
+            <img
+              src="https://img.freepik.com/free-photo/smiley-businesswoman-posing-city-with-arms-crossed_23-2148767033.jpg"
+              className="rounded-3xl w-full h-full object-cover"
+            />
+
+            {/* Floating Tag Top */}
+            <div className="absolute -top-6 left-6 bg-white shadow-md px-4 py-2 rounded-full flex items-center space-x-2">
+              <span className="text-indigo-600 text-lg">🌐</span>
+              <p className="text-gray-700 text-sm">yourcompanyname.com</p>
+            </div>
+
+            {/* Floating Card Bottom Left */}
+            <div className="absolute -bottom-8 left-4 bg-white shadow-lg px-4 py-3 rounded-2xl w-56">
+              <p className="text-gray-500 text-xs flex items-center gap-2">
+                <span className="text-green-500">●</span> Today’s
+              </p>
+              <p className="text-xl font-semibold">1,00,000+ Visitor</p>
+            </div>
+
+            {/* Floating Card Bottom Right */}
+            <div className="absolute -bottom-20 left-20 bg-white shadow-lg px-4 py-3 rounded-2xl w-60">
+              <p className="text-sm text-gray-700">Grow our company</p>
+              <p className="text-xl font-bold">10,525</p>
+              <div className="w-full mt-2 h-2 bg-gray-200 rounded-full">
+                <div className="h-2 bg-indigo-500 rounded-full w-[70%]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* RIGHT CONTENT */}
+        <div>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+            Your website’s safety is the <span className="text-indigo-600">MilesWeb priority</span>
+          </h2>
+
+          <p className="text-gray-600 mt-6 text-lg leading-relaxed">
+            We treat your website like it's ours. Every hosting plan includes enterprise-grade protection 
+            so you can stay focused on your business.
+          </p>
+
+          <button className="mt-8 px-8 py-4 bg-indigo-600 text-white rounded-xl shadow-lg hover:bg-indigo-700 transition">
+            Get Started
+          </button>
+
+          {/* FEATURES */}
+          <div className="mt-10 space-y-8">
+            {/* Feature 1 */}
+            <div className="flex items-center space-x-4 border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 flex items-center justify-center rounded-full text-2xl">
+                🔒
+              </div>
+              <p className="text-gray-800 font-medium text-lg">
+                SSL and malware protection
+              </p>
+            </div>
+
+            {/* Feature 2 */}
+            <div className="flex items-center space-x-4 border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 flex items-center justify-center rounded-full text-2xl">
+                📧
+              </div>
+              <p className="text-gray-800 font-medium text-lg">
+                Spam-free business email
+              </p>
+            </div>
+
+            {/* Feature 3 */}
+            <div className="flex items-center space-x-4 border p-5 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="w-12 h-12 bg-indigo-100 text-indigo-600 flex items-center justify-center rounded-full text-2xl">
+                🔄
+              </div>
+              <p className="text-gray-800 font-medium text-lg">
+                Daily automatic backups & WAF
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+   
+
+
 <Testimonials/>
+   <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center">
+        <div className="absolute inset-0 animate-gradient bg-gradient-to-b from-[#cfd8ff] to-[#b5c3ff]"></div>
+
+        <div className="relative z-10 bg-white w-[85%] h-[520px] shadow-xl rounded-xl overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-b from-[#98a8ff] to-[#c7d1ff]"></div>
+
+          <div className="relative z-20 w-full h-full flex items-center justify-center">
+            <h1 className="absolute top-12 left-16 text-white text-7xl font-bold opacity-70 tracking-wide">
+              Host Web
+            </h1>
+
+            <p className="absolute left-16 top-28 text-white tracking-wider">
+              LUXURIOUS
+            </p>
+            <p className="absolute left-16 bottom-20 text-white">
+              ALL TIME BEST <br /> OFFERS
+            </p>
+
+            <p className="absolute right-10 top-25 text-white text-right">
+              Lorem ipsum dolor sit amet consectetur,<br></br> adipisicing elit.
+              Repellat qui perferendis
+              <br></br>consequatur magni saepe, est at ratione <br></br>eligendi
+              amet eaque sit consectetur <br></br>quas hic itaque totam
+              perspiciatis?
+            </p>
+            <p className="absolute right-16 bottom-20 text-white text-right">
+              CELEBRATE INDIVIDUALITY <br /> WITH UNIQUE OUTFITS
+            </p>
+
+            <p className="absolute bottom-12 text-white font-semibold bg-black/30 px-6 py-2 rounded-full">
+              SHOP NOW, SAVE MORE
+            </p>
+
+            <img src="/host.png" className="relative h-[420px] z-30" />
+          </div>
+        </div>
+      </section>
+
+
+      <section className="w-full py-20 bg-gray-50 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 text-center mb-12">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
+         Success stories of proven performance
+        </h2>
+        <p className="text-gray-600 mt-4">
+          Real stories from people growing their business using our hosting services.
+        </p>
+      </div>
+
+      {/* INFINITE CAROUSEL */}
+      <div className="relative w-full overflow-hidden">
+        <div className="flex space-x-6 animate-marquee">
+          
+          {/* CARD 1 */}
+          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <div>
+                <h4 className="font-semibold text-gray-900">Israq Khan</h4>
+                <p className="text-gray-500 text-sm">CEO – Kodezi</p>
+              </div>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              “Wavespace is very <span className="font-bold">reliable</span> and the designs are truly amazing!”
+            </p>
+          </div>
+
+          {/* CARD 2 */}
+          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <div>
+                <h4 className="font-semibold text-gray-900">Nick Fisher</h4>
+                <p className="text-gray-500 text-sm">Founder – Tournated</p>
+              </div>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              “Highly happy with the work. I will definitely keep working with them!”
+            </p>
+          </div>
+
+          {/* CARD 3 */}
+          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <div>
+                <h4 className="font-semibold text-gray-900">Abraham Ajayi</h4>
+                <p className="text-gray-500 text-sm">CEO – ActiveSync</p>
+              </div>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              “They brought my idea to life. Fantastic experience!”
+            </p>
+          </div>
+
+          {/* CARD 4 */}
+          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <div>
+                <h4 className="font-semibold text-gray-900">Danny P</h4>
+                <p className="text-gray-500 text-sm">Director of Sales – Luxara</p>
+              </div>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              “Very professional and amazing communication. Highly recommended!”
+            </p>
+          </div>
+
+          {/* CARD 5 */}
+          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+            <div className="flex items-center gap-3 mb-4">
+              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <div>
+                <h4 className="font-semibold text-gray-900">Mark Gawlyk</h4>
+                <p className="text-gray-500 text-sm">Co-founder – HBIT App</p>
+              </div>
+            </div>
+            <p className="text-gray-600 leading-relaxed">
+              “Amazing support and high-quality design delivered fast.”
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      {/* SECOND LOOP FOR INFINITE EFFECT */}
+      <div className="relative w-full overflow-hidden mt-6">
+        <div className="flex space-x-6 animate-marquee2">
+          
+          {/* REPEAT ALL CARDS FOR LOOPING */}
+          {/* You can paste the same card list again here */}
+          
+        </div>
+      </div>
+    </section>
+
+      <FAQSection/>
 
  <footer className="bg-[#0D0F15] text-gray-300 pt-16 pb-8 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
@@ -649,6 +914,7 @@ export default function Home() {
         © {new Date().getFullYear()} AtlasServe Hosting. All rights reserved.
       </div>
     </footer>
+
 
       
     </main>
