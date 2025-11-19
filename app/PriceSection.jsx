@@ -3,44 +3,66 @@
 import { useEffect } from "react";
 
 export default function PriceSection() {
+  // useEffect(() => {
+  //   const items = document.querySelectorAll(".stack-item");
+
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry) => {
+  //         const index = [...items].indexOf(entry.target);
+
+  //         if (entry.isIntersecting) {
+  //           entry.target.classList.add("active");
+
+  //           // make all previous items visible
+  //           for (let i = 0; i < index; i++) {
+  //             items[i].classList.add("active");
+  //           }
+  //         } else {
+  //           entry.target.classList.remove("active");
+
+  //           // hide all items after this
+  //           for (let i = index; i < items.length; i++) {
+  //             items[i].classList.remove("active");
+  //           }
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.6 }
+  //   );
+
+  //   items.forEach((item) => observer.observe(item));
+  // }, []);
+
+
   useEffect(() => {
-    const items = document.querySelectorAll(".stack-item");
+  const items = document.querySelectorAll(".stack-item");
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const index = [...items].indexOf(entry.target);
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        const element = entry.target;
 
-          if (entry.isIntersecting) {
-            entry.target.classList.add("active");
+        if (entry.isIntersecting) {
+          element.classList.add("active");
+        }
+      });
+    },
+    { threshold: 0.45 } // smoother threshold
+  );
 
-            // make all previous items visible
-            for (let i = 0; i < index; i++) {
-              items[i].classList.add("active");
-            }
-          } else {
-            entry.target.classList.remove("active");
+  items.forEach((item) => observer.observe(item));
 
-            // hide all items after this
-            for (let i = index; i < items.length; i++) {
-              items[i].classList.remove("active");
-            }
-          }
-        });
-      },
-      { threshold: 0.6 }
-    );
-
-    items.forEach((item) => observer.observe(item));
-  }, []);
+  return () => observer.disconnect();
+}, []);
 
   return (
     <section className="stack-container">
       <div className="stack-item bg-pink-300">
-        <div className="relative h-full w-full flex items-center justify-center bg-white rounded-2xl  mx-auto px-10 py-20 shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden" style={{background:"#f5e0dcff"}}>
+        <div className="relative h-full w-full flex items-center justify-center bg-white   mx-auto px-10 py-20 shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden" style={{background:"#3f2fee"}}>
           {/* Soft Gradient Background Shapes */}
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute -top-20 -left-20 w-96 h-96 bg-blue-200 rounded-full blur-[140px] opacity-50"></div>
+            <div className="absolute -top-20 -left-20 w-96 h-96  rounded-full"></div>
             <div className="absolute bottom-0 right-0 w-[420px] h-[420px] bg-blue-300 rounded-full blur-[180px] opacity-60"></div>
           </div>
 
@@ -48,17 +70,17 @@ export default function PriceSection() {
           <div className="relative z-10 container mx-auto px-10 lg:px-20 py-20 flex flex-col lg:flex-row items-center justify-between"  >
             {/* Text Content */}
             <div className="max-w-xl">
-              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-[#0A1A44]">
+              <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
                 AI Website Builder
-                <br /> Build Smarter, Faster
+                <br /> Build Smarter
               </h1>
 
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+              <p className="text-white text-lg leading-relaxed mb-8">
                 Generate fully designed websites in seconds using advanced AI
                 tools — simple, clean, and incredibly fast.
               </p>
 
-              <button className="px-10 py-4 bg-blue-600 hover:bg-blue-700 transition-all rounded-xl text-white text-lg font-semibold shadow-lg">
+              <button className="px-10 py-4 bg-white hover:bg-white transition-all rounded-xl  text-lg font-semibold shadow-lg">
                 Start Building
               </button>
             </div>
@@ -74,7 +96,7 @@ export default function PriceSection() {
         </div>
       </div>
       <div className="stack-item bg-blue-300">
-        <div className="relative h-full w-full flex items-center justify-center bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden" style={{background:"#BCD8F5"}}>
+        <div className="relative h-full w-full flex items-center justify-center bg-white  shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden" style={{background:"white"}}>
           {/* Decorative Gradient Shapes */}
           <div className="absolute inset-0 pointer-events-none">
             <div className="absolute top-10 right-10 w-96 h-96 bg-blue-100 rounded-full blur-[160px] opacity-60"></div>
@@ -110,24 +132,24 @@ export default function PriceSection() {
         </div>
       </div>
       <div className="stack-item bg-gray-400">
-        <div className="relative h-full w-full flex items-center justify-center bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden" style={{background:"#F5BCEF"}}>
+        <div className="relative h-full w-full flex items-center justify-center bg-white  shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden" style={{background:"#090909"}}>
           {/* Background Shapes */}
           <div className="absolute inset-0">
-            <div className="absolute -left-32 top-0 w-[400px] h-[400px] bg-blue-200 blur-[170px] opacity-40"></div>
-            <div className="absolute bottom-0 right-0 w-[450px] h-[450px] bg-blue-300 blur-[170px] opacity-50"></div>
+            <div className="absolute -left-32 top-0 w-[400px] h-[400px] "></div>
+            <div className="absolute bottom-0 right-0 w-[450px] h-[450px] "></div>
           </div>
 
           <div className="relative z-10 container mx-auto px-10 lg:px-20 py-20 flex flex-col lg:flex-row items-center justify-between">
             <div className="max-w-xl">
-              <h1 className="text-5xl lg:text-6xl font-bold text-[#0A1A44] mb-6">
+              <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
                 Advanced Security
               </h1>
-              <p className="text-gray-600 text-lg leading-relaxed mb-8">
+              <p className="text-gray-600 text-lg leading-relaxed mb-8 text-white">
                 Enjoy built-in DDoS protection, SSL, firewalls, and constant
                 monitoring for full-scale hosting security.
               </p>
 
-              <button className="px-10 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl shadow-lg text-lg">
+              <button className="px-10 py-4 bg-white hover:bg-white  rounded-xl shadow-lg text-lg">
                 Secure Your Website
               </button>
             </div>

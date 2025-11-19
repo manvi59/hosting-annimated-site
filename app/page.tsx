@@ -65,6 +65,7 @@
 // }
 
 import PriceSection from "./PriceSection.jsx"
+import Testimonials from "./Testimonials.jsx";
 export default function Home() {
   return (
     <main className="min-h-screen w-full bg-white">
@@ -276,6 +277,27 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center ">
+        {/* Animated Gradient Background */}
+        {/* <div className="absolute inset-0 animate-gradient bg-gradient-to-b from-[#cfd8ff] to-[#b5c3ff]"></div> */}
+        <div className="absolute inset-0 animate-gradient"></div>
+
+        {/* White Frame Container */}
+        <div className="relative z-10 bg-white w-[90%] h-[620px]  overflow-hidden">
+          {/* Inner gradient bg behind the video */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#98a8ff] to-[#c7d1ff]"></div>
+
+          {/* Video Full Cover */}
+          <video
+            src="/hosting.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          ></video>
+        </div>
+      </section>
 
       <section className="w-full py-20 px-6 md:px-14 bg-white">
         {/* Heading */}
@@ -443,27 +465,7 @@ export default function Home() {
         <img src="/banner.webp" className="w-full h-full" />
       </section>
 
-      <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center hidden">
-        {/* Animated Gradient Background */}
-        {/* <div className="absolute inset-0 animate-gradient bg-gradient-to-b from-[#cfd8ff] to-[#b5c3ff]"></div> */}
-        <div className="absolute inset-0 animate-gradient"></div>
-
-        {/* White Frame Container */}
-        <div className="relative z-10 bg-white w-[90%] h-[620px]  overflow-hidden">
-          {/* Inner gradient bg behind the video */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#98a8ff] to-[#c7d1ff]"></div>
-
-          {/* Video Full Cover */}
-          <video
-            src="/hosting.mp4"
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute inset-0 w-full h-full object-cover"
-          ></video>
-        </div>
-      </section>
+       
 
       <section className="w-full py-10 overflow-hidden bg-white">
         <div className="flex gap-16 items-center scroll-animation whitespace-nowrap">
@@ -538,6 +540,7 @@ export default function Home() {
 
       
       <PriceSection/>
+      
 
 {/* <section className="relative h-full w-full flex items-center justify-center bg-white rounded-2xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden">
 
@@ -576,6 +579,8 @@ export default function Home() {
 
   </div>
 </section> */}
+
+<Testimonials/>
 
       
     </main>
