@@ -101,8 +101,8 @@ export default function Home() {
           </div>
 
           <h1 className="text-6xl md:text-6xl text-white font-bold leading-tight mb-6">
-            Global Hosting <br />
-            agency digital partner
+            Dedicated Servers <br />
+            High Performance 
             <br />
             {/* for <span className="gradient-text">SaaS companies.</span><br /> */}
             {/* <span className="gradient-text2">future unicorns</span> */}
@@ -179,8 +179,8 @@ export default function Home() {
        <section className="w-full py-20 px-6 md:px-14 bg-white">
         {/* Heading */}
         <h1 className="text-4xl md:text-5xl font-semibold text-center leading-tight text-gray-900 mb-10">
-          Partner with a full design team <br />
-          on a flat monthly subscription.
+         Featured Hosting Plans <br />
+          {/* on a flat monthly subscription. */}
         </h1>
 
         {/* Brand Logos */}
@@ -246,9 +246,10 @@ export default function Home() {
 
             {/* Features */}
             <ul className="mt-6 space-y-3 text-gray-700 text-sm">
-              <li>✔ 55 hours per month</li>
-              <li>✔ All design services included</li>
-              <li>✔ Dedicated senior designer + PM</li>
+              <li>✔ DOMAINS HOSTING: 1</li>
+              <li>✔ DISK SPACE: 100 GB NVMe SPACE</li>
+              <li>✔ RAM: 2 GB</li>
+              <li>✔ BANDWIDTH: UNLIMITED</li>
             </ul>
           </div>
 
@@ -293,9 +294,10 @@ export default function Home() {
 
             {/* Features */}
             <ul className="mt-6 space-y-3 text-gray-700 text-sm">
-              <li>✔ 110 hours per month</li>
-              <li>✔ All design services included</li>
-              <li>✔ Senior Designer + Copywriter + PM</li>
+              <li>✔ DOMAINS HOSTING: 5</li>
+              <li>✔ DISK SPACE: Unlimited NVMe SPACE</li>
+              <li>✔ RAM: : 2 GB</li>
+              <li>✔ BANDWIDTH: UNLIMITED</li>
             </ul>
           </div>
 
@@ -330,9 +332,10 @@ export default function Home() {
 
             {/* Features */}
             <ul className="mt-6 space-y-3 text-gray-700 text-sm">
-              <li>✔ Flexible scope & timeline</li>
-              <li>✔ Custom development or no-code</li>
-              <li>✔ Senior Designer + Copywriter + PM</li>
+              <li>✔ DOMAINS HOSTING: UNLIMITED</li>
+              <li>✔ DISK SPACE: Unlimited NVMe SPACE</li>
+              <li>✔ RAM: : 3 GB</li>
+              <li>✔ BANDWIDTH: UNLIMITED</li>
             </ul>
           </div>
         </div>
@@ -353,7 +356,8 @@ export default function Home() {
             <div>
               <h2 className="text-4xl font-bold">92%</h2>
               <p className="text-gray-500 mt-2 text-sm">
-                client satisfaction <br /> in post-project reviews.
+                client satisfaction 
+                {/* <br /> in post-project reviews. */}
               </p>
             </div>
           </div>
@@ -362,9 +366,9 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
             <p className="text-gray-400 text-sm">/02</p>
             <div>
-              <h2 className="text-4xl font-bold">$10B+</h2>
+              <h2 className="text-4xl font-bold">2885</h2>
               <p className="text-gray-500 mt-2 text-sm">
-                valuation influenced <br /> by our design
+                Trusted Clients
               </p>
             </div>
           </div>
@@ -373,9 +377,9 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
             <p className="text-gray-400 text-sm">/03</p>
             <div>
-              <h2 className="text-4xl font-bold">2019</h2>
+              <h2 className="text-4xl font-bold">2895+</h2>
               <p className="text-gray-500 mt-2 text-sm">
-                Founded, 6 years <br /> of experience
+                Domains
               </p>
             </div>
           </div>
@@ -384,9 +388,9 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between md:col-span-1">
             <p className="text-gray-400 text-sm">/04</p>
             <div>
-              <h2 className="text-4xl font-bold">25M+</h2>
+              <h2 className="text-4xl font-bold">2324+</h2>
               <p className="text-gray-500 mt-2 text-sm">
-                monthly visits <br /> on client platforms
+                Web Hosting
               </p>
             </div>
           </div>
@@ -395,10 +399,9 @@ export default function Home() {
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between md:col-span-2">
             <p className="text-gray-400 text-sm">/05</p>
             <div>
-              <h2 className="text-4xl font-bold">500+ global project</h2>
+              <h2 className="text-4xl font-bold">2005</h2>
               <p className="text-gray-500 mt-2 text-sm">
-                250+ testimonial with trusted by YC-backed, <br />
-                VC-funded, a16z, Sequoia
+                Estb. since
               </p>
             </div>
           </div>
@@ -656,7 +659,8 @@ export default function Home() {
         {/* RIGHT CONTENT */}
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-            Your website’s safety is the <span className="text-indigo-600">MilesWeb priority</span>
+            Next Gen  <span className="text-indigo-600">VPS Servers</span> 
+            {/* Your website’s safety is the <span className="text-indigo-600">MilesWeb priority</span> */}
           </h2>
 
           <p className="text-gray-600 mt-6 text-lg leading-relaxed">
@@ -676,7 +680,7 @@ export default function Home() {
                 🔒
               </div>
               <p className="text-gray-800 font-medium text-lg">
-                SSL and malware protection
+                SSH Access 
               </p>
             </div>
 
@@ -686,7 +690,7 @@ export default function Home() {
                 📧
               </div>
               <p className="text-gray-800 font-medium text-lg">
-                Spam-free business email
+                Full Root Access 
               </p>
             </div>
 
@@ -696,7 +700,7 @@ export default function Home() {
                 🔄
               </div>
               <p className="text-gray-800 font-medium text-lg">
-                Daily automatic backups & WAF
+               99.99% Uptime and 24x7 Support
               </p>
             </div>
           </div>
@@ -715,30 +719,27 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-b from-[#98a8ff] to-[#c7d1ff]"></div>
 
           <div className="relative z-20 w-full h-full flex items-center justify-center">
-            <h1 className="absolute top-12 left-16 text-white text-7xl font-bold opacity-70 tracking-wide">
-              Host Web
+            <h1 className="absolute top-12 left-16 text-white text-4xl font-bold opacity-70 tracking-wide">
+              Why Domainz.in
             </h1>
 
             <p className="absolute left-16 top-28 text-white tracking-wider">
-              LUXURIOUS
+              With 20 years of experience
             </p>
             <p className="absolute left-16 bottom-20 text-white">
-              ALL TIME BEST <br /> OFFERS
+              Hosting Domain from  <br></br>past 2 Decades 
             </p>
 
             <p className="absolute right-10 top-25 text-white text-right">
-              Lorem ipsum dolor sit amet consectetur,<br></br> adipisicing elit.
-              Repellat qui perferendis
-              <br></br>consequatur magni saepe, est at ratione <br></br>eligendi
-              amet eaque sit consectetur <br></br>quas hic itaque totam
-              perspiciatis?
+              We understand you just like our Family,<br></br> From instant support to free trials,
+              <br></br>we're dedicated to enhancing your   <br></br>business every step of the way.
             </p>
             <p className="absolute right-16 bottom-20 text-white text-right">
-              CELEBRATE INDIVIDUALITY <br /> WITH UNIQUE OUTFITS
+              guide you to the <br></br> best solution possible
             </p>
 
-            <p className="absolute bottom-12 text-white font-semibold bg-black/30 px-6 py-2 rounded-full">
-              SHOP NOW, SAVE MORE
+            <p className="absolute bottom-12  text-white font-semibold bg-black/30 px-6 py-2 rounded-full">
+              Talk To Our Experts
             </p>
 
             <img src="/host.png" className="relative h-[420px] z-30" />
