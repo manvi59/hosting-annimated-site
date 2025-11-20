@@ -1,0 +1,126 @@
+:root{
+  --max:1200px;
+  --black:#111;
+  --text:#222;
+  --gray:#666;
+  --light:#f5f5f5;
+  --purple:#4f3bff;
+  --blue:#1a4bff;
+  --yellow:#f3c800;
+  --orange:#ff6a2e;
+  font-family: "Inter", sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{color:var(--black);background:#fff;line-height:1.5;}
+.container{max-width:var(--max);margin:auto;padding:0 24px;}
+a{text-decoration:none;color:inherit;}
+
+/* ===== NAVBAR ===== */
+nav{
+  width:100%;background:#fff;position:sticky;top:0;z-index:20;
+  border-bottom:1px solid #eee;
+}
+.nav-inner{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:20px 0;
+}
+.logo{font-size:26px;font-weight:700;}
+.menu{display:flex;gap:28px;font-size:16px;color:#333;}
+.nav-cta a{
+  background:linear-gradient(90deg,#4f3bff,#1a4bff);
+  color:#fff;padding:12px 22px;border-radius:40px;font-weight:600;
+}
+
+/* ===== HERO ===== */
+.hero{padding:80px 0 60px;}
+.hero h1{font-size:56px;max-width:760px;font-weight:800;line-height:1.1;}
+.hero span.gradient{
+  background:linear-gradient(90deg,#ff8a3d,#ff4bd1,#4f3bff);
+  -webkit-background-clip:text;color:transparent;
+}
+.hero p{margin-top:20px;font-size:20px;color:#555;max-width:720px;}
+.hero-img img{width:100%;border-radius:12px;margin-top:40px;}
+
+/* ===== TRUST STRIP ===== */
+.trust{background:#fafafa;padding:40px 0;text-align:center;font-size:20px;}
+
+/* ===== STATS CARDS ===== */
+
+.stats-section{padding:80px 0;background:#f0efef;}
+.stats-heading h2{font-size:40px;font-weight:800;margin-bottom:40px;}
+.stats-heading h2 .grey{color: grey}
+.stats-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:3px;
+}
+.card{
+  background:#fff;border-radius:14px;padding:100px 5px 0px 22px;min-height:240px;
+  border:1px solid #eee;
+}
+.card h3{font-size:34px;font-weight:800;margin-bottom:10px;}
+.card p{color:#666;font-size:16px;}
+
+/* ===== IMAGE + TEXT BLOCK ===== */
+.split{padding:100px 0;display:flex;gap:50px;align-items:center;}
+.split img{width:50%;border-radius:12px;}
+.split .text{width:50%;}
+.split .text h2{font-size:42px;font-weight:800;margin-bottom:20px;}
+.split .text p{font-size:18px;color:#444;margin-bottom:20px;}
+.btn{
+  display:inline-block;background:#1a4bff;color:#fff;
+  padding:12px 20px;border-radius:40px;font-weight:600;
+}
+
+/* ===== WHY SECTION ===== */
+.why{padding:120px 0;display:flex;gap:50px;align-items:center;}
+.why .left{width:50%;}
+.why .right{width:50%;}
+.why h2{font-size:46px;font-weight:800;margin-bottom:20px;}
+.why p{font-size:18px;color:#555;margin-bottom:30px;}
+ul.feature-list{list-style:none;}
+ul.feature-list li{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:18px 0;border-bottom:1px solid #eee;font-size:20px;
+}
+
+/* ===== SERVICE BLOCKS (COLORED) ===== */
+.service-block{padding:100px 0;color:#fff;}
+.service-block h2{font-size:46px;font-weight:800;margin-bottom:18px;}
+.service-block p{font-size:20px;margin-bottom:30px;max-width:600px;}
+.service-block .content{display:flex;gap:40px;align-items:center;}
+.service-block img{width:380px;border-radius:12px;}
+.service-block.blue{background:#3a2bff;}
+.service-block.yellow{background:#f3c800;color:#111;}
+.service-block.orange{background:#ff6a2e;}
+
+/* ===== FOUNDER DARK ===== */
+.founder{background:#000;color:#fff;padding:120px 0;}
+.founder h2{font-size:58px;font-weight:900;margin-bottom:50px;}
+.founder-inner{display:flex;gap:40px;align-items:center;}
+.founder-inner img{width:50%;border-radius:12px;}
+.founder-inner .quote{width:50%;font-size:20px;line-height:1.7;}
+
+/* ===== CREATIVE TEAM ===== */
+.creatives{padding:100px 0;}
+.creatives h2{font-size:42px;font-weight:800;margin-bottom:20px;}
+.creatives-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:24px;margin-top:60px;
+}
+.creatives-grid img{width:100%;border-radius:12px;}
+
+/* ===== BELIEFS ===== */
+.beliefs{padding:120px 0;}
+.beliefs h2{font-size:46px;font-weight:800;margin-bottom:40px;}
+.beliefs-list{display:flex;flex-direction:column;gap:40px;}
+.beliefs-item h3{font-size:24px;font-weight:700;margin-bottom:10px;}
+.beliefs-item p{color:#555;font-size:18px;}
+
+/* ===== FOOTER ===== */
+footer{background:#000;color:#fff;padding:80px 0;}
+.footer-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:40px;margin-bottom:40px;
+}
+.footer-col h4{font-size:20px;margin-bottom:18px;}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.footer-bottom{text-align:center;color:#ccc;font-size:14px;margin-top:20px;}
