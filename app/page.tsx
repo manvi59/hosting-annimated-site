@@ -64,6 +64,7 @@
 //   );
 // }
 
+"use client"
 import PriceSection from "./PriceSection.jsx"
 import Testimonials from "./Testimonials.jsx";
 import FAQSection from "./FAQSection.jsx"
@@ -77,7 +78,7 @@ export default function Home() {
         <div className="text-3xl font-bold">Wavespace</div>
 
         <ul className="flex items-center gap-10 text-lg">
-          <Link href={"/about"}>
+          <Link href={"/service"}>
           <li className="hover:text-black/60 cursor-pointer">Services ↗</li>
           </Link>
           <li className="cursor-pointer">Case studies⁰⁹</li>
@@ -95,12 +96,12 @@ export default function Home() {
 
       {/* HERO SECTION */}
       {/* <section className="px-14 py-20 grid grid-cols-1 md:grid-cols-2 gap-10"> */}
-      <section className=" px-14 py-20 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 "
+      {/* <section className=" px-14 py-20 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 "
       style={{background:"#6456f7"}}
       >
-        {/* LEFT SIDE TEXT */}
+         
         <div>
-          {/* Tag */}
+         
           <div className="flex items-center gap-2 bg-green-100 w-fit px-4 py-1 rounded-full mb-6">
             <div className="w-3 h-3 bg-yellow-400 rounded-full"></div>
             <p className="text-sm">Available for New Projects</p>
@@ -110,11 +111,10 @@ export default function Home() {
             Dedicated Servers <br />
             High Performance 
             <br />
-            {/* for <span className="gradient-text">SaaS companies.</span><br /> */}
-            {/* <span className="gradient-text2">future unicorns</span> */}
+             
           </h1>
 
-          {/* BUTTONS */}
+          
           <div className="flex gap-6 mt-8">
             <button className="bg-black text-white px-8 py-4 rounded-full text-xl">
               Book a call
@@ -127,7 +127,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
+         
         <div className="flex  justify-end ">
           <div className="flex-col mt-20">
             <p className="text-lg leading-relaxed mb-6 text-white">
@@ -136,13 +136,7 @@ export default function Home() {
               high-performance digital experiences.
             </p>
 
-            {/* <div className="flex items-center gap-3 mb-6">
-            <img src="/photo1.avif" className="w-10 h-10 rounded-full" />
-            <img src="/photo1.avif" className="w-10 h-10 rounded-full" />
-            <img src="/photo1.avif" className="w-10 h-10 rounded-full" />
-
-            <p className="text-gray-600">Loved by 500+ Founders</p>
-          </div> */}
+            
 
             <div className="flex items-center gap-3 mb-6">
               <div className="flex -space-x-3">
@@ -180,7 +174,86 @@ export default function Home() {
             <img src="/certified.png" className="w-56 mt-8 hidden " />
           </div>
         </div>
-      </section>
+      </section> */}
+
+      <section
+  className="relative px-14 py-24 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-16 overflow-hidden"
+  style={{ background: "#6456f7" }}
+>
+  {/* BACKGROUND GLOW EFFECT */}
+  <div className="absolute inset-0 opacity-30 blur-[120px] bg-gradient-to-br from-white via-purple-200 to-transparent"></div>
+
+  {/* LEFT CONTENT */}
+  <div className="relative z-10 animate-fadeUpSlow">
+    {/* Tag */}
+    <div className="flex items-center gap-2 bg-white/20 backdrop-blur-md w-fit px-4 py-1 rounded-full mb-6 border border-white/30">
+      <div className="w-3 h-3 bg-yellow-400 rounded-full animate-pulse"></div>
+      <p className="text-sm text-white">Available for New Projects</p>
+    </div>
+
+    <h1 className="text-5xl md:text-6xl text-white font-extrabold leading-tight mb-8 drop-shadow-lg">
+      Dedicated Servers <br />
+      High Performance <br />
+      <span className="bg-gradient-to-r from-yellow-200 to-white bg-clip-text text-transparent">
+        For Global Scale
+      </span>
+    </h1>
+
+    {/* BUTTONS */}
+    <div className="flex gap-6 mt-10">
+      <button className="bg-black hover:bg-white hover:text-black transition-all duration-300 text-white px-10 py-4 rounded-full text-xl shadow-lg">
+        Book a Call
+      </button>
+
+      <button className="bg-white hover:bg-gray-200 border px-10 py-4 rounded-full text-xl flex items-center gap-3 shadow-lg transition-all duration-300">
+        <img src="/server.jpg" className="w-10 h-10 animate-float" />
+        View Work
+      </button>
+    </div>
+  </div>
+
+  {/* RIGHT CONTENT */}
+  <div className="relative mt-16 md:mt-0 z-10 animate-slideInRight">
+    <p className="text-lg text-white/90 leading-relaxed mb-6">
+      Wavespace is a global UX agency that helps brands scale with fast,
+      high-performance digital experiences.
+    </p>
+
+    {/* Avatars */}
+    <div className="flex items-center gap-3 mb-6">
+      <div className="flex -space-x-3">
+        <img
+          src="/photo1.avif"
+          className="w-10 h-10 rounded-full border-2 border-white"
+        />
+        <img
+          src="/photo1.avif"
+          className="w-10 h-10 rounded-full border-2 border-white"
+        />
+        <img
+          src="/photo1.avif"
+          className="w-10 h-10 rounded-full border-2 border-white"
+        />
+      </div>
+      <p className="text-white/90">Loved by 500+ Founders</p>
+    </div>
+
+    {/* Rating */}
+    <div className="flex items-center gap-3">
+      <img src="/cloud.jpg" className="w-10 h-10 animate-float" />
+
+      <div className="flex">
+        {Array.from({ length: 5 }).map((_, i) => (
+          <span key={i} className="text-yellow-300 text-2xl">★</span>
+        ))}
+      </div>
+      <p className="text-white">13 Reviews</p>
+    </div>
+
+    {/* <img src="/certified.png" className="w-56 mt-8 opacity-70" /> */}
+  </div>
+</section>
+
 
        <section className="w-full py-20 px-6 md:px-14 bg-white">
         {/* Heading */}
@@ -346,29 +419,29 @@ export default function Home() {
           </div>
         </div>
       </section>
-         <section className="w-full py-20 px-6 md:px-14">
-        {/* Heading */}
+         {/* <section className="w-full py-20 px-6 md:px-14">
+       
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900 mb-12">
           Bold UX design, billion-dollar proof. We <br />
           measure impact,{" "}
           <span className="text-gray-500">not just ship pixels.</span>
         </h1>
 
-        {/* Grid */}
+       
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {/* Card 01 */}
+          
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
             <p className="text-gray-400 text-sm">/01</p>
             <div>
               <h2 className="text-4xl font-bold">92%</h2>
               <p className="text-gray-500 mt-2 text-sm">
                 client satisfaction 
-                {/* <br /> in post-project reviews. */}
+                 
               </p>
             </div>
           </div>
 
-          {/* Card 02 */}
+         
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
             <p className="text-gray-400 text-sm">/02</p>
             <div>
@@ -379,7 +452,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 03 */}
+           
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between">
             <p className="text-gray-400 text-sm">/03</p>
             <div>
@@ -390,7 +463,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 04 */}
+         
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between md:col-span-1">
             <p className="text-gray-400 text-sm">/04</p>
             <div>
@@ -401,7 +474,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Card 05 */}
+           
           <div className="bg-white rounded-2xl shadow-sm border p-8 h-[230px] flex flex-col justify-between md:col-span-2">
             <p className="text-gray-400 text-sm">/05</p>
             <div>
@@ -412,7 +485,121 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+
+        {/* <section className="w-full py-24 px-6 md:px-16 bg-gradient-to-b from-white to-gray-50">
+  <div className="max-w-6xl mx-auto">
+    
+    <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900 mb-16">
+      Bold UX design, billion-dollar proof. We <br />
+      measure impact,{" "}
+      <span className="text-gray-500">not just ship pixels.</span>
+    </h1>
+
+     
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      
+      {[
+        { id: "/01", value: "92%", label: "Client Satisfaction" },
+        { id: "/02", value: "2885", label: "Trusted Clients" },
+        { id: "/03", value: "2895+", label: "Domains" },
+        { id: "/04", value: "2324+", label: "Web Hostings" },
+        { id: "/05", value: "2005", label: "Estb. Since" },
+      ].map((item, idx) => (
+        <div
+          key={idx}
+          className={`group bg-white rounded-3xl border shadow-[0_4px_18px_rgba(0,0,0,0.06)] backdrop-blur-sm px-10 py-12 
+          flex flex-col justify-between transition-all duration-300 hover:shadow-[0_8px_28px_rgba(0,0,0,0.12)] hover:-translate-y-1
+          ${idx === 4 ? "md:col-span-2" : ""}`}
+        >
+          <p className="text-gray-400 text-sm font-medium">{item.id}</p>
+
+          <div>
+            <h2 className="text-5xl font-extrabold tracking-tight text-gray-900 group-hover:text-gray-700 transition-all">
+              {item.value}
+            </h2>
+            <p className="text-gray-500 mt-3 text-base">
+              {item.label}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+        </section> */}
+
+        <section className="w-full py-24 px-6 md:px-16 relative overflow-hidden">
+
+  {/* Soft Background Glow */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(200,200,255,0.4),transparent_60%)] opacity-70"></div>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(255,200,200,0.4),transparent_70%)] opacity-70"></div>
+
+  <div className="relative max-w-7xl mx-auto">
+    {/* Heading */}
+    <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900 mb-16 tracking-tight">
+      Bold UX design, billion-dollar proof. We <br />
+      measure impact,{" "}
+      <span className="text-gray-500">not just ship pixels.</span>
+    </h1>
+
+    {/* Stats Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+      {[
+        { id: "/01", value: "92%", label: "Client Satisfaction" },
+        { id: "/02", value: "2885", label: "Trusted Clients" },
+        { id: "/03", value: "2895+", label: "Domains" },
+        { id: "/04", value: "2324+", label: "Web Hostings" },
+        { id: "/05", value: "2005", label: "Estb. Since" },
+      ].map((item, idx) => (
+        <div
+          key={idx}
+          className={`group backdrop-blur-xl bg-white/70 border border-white/40 
+          rounded-3xl shadow-[0_8px_30px_rgba(0,0,0,0.08)] p-10 
+          h-[240px] flex flex-col justify-between animate-fadeUp
+          transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_12px_40px_rgba(0,0,0,0.15)]
+          hover:bg-white/80 hover:border-gray-200
+          ${idx === 4 ? "md:col-span-2" : ""}`}
+          style={{ animationDelay: `${idx * 0.15}s` }}
+        >
+          {/* Number */}
+          <p className="text-gray-400 text-sm font-medium tracking-widest">
+            {item.id}
+          </p>
+
+          {/* Value */}
+          <div>
+            <h2 className="text-5xl font-extrabold tracking-tight text-gray-900 group-hover:text-gray-700 transition-colors">
+              {item.value}
+            </h2>
+            <p className="text-gray-500 mt-3 text-base group-hover:text-gray-600 transition-all">
+              {item.label}
+            </p>
+          </div>
+
+          {/* Animated Accent Line */}
+          <div className="h-1 w-0 group-hover:w-full bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full transition-all duration-500"></div>
+        </div>
+      ))}
+    </div>
+  </div>
+
+  {/* Fade-Up Animation Keyframes */}
+  <style>{`
+    @keyframes fadeUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeUp {
+      animation: fadeUp 0.8s ease forwards;
+    }
+  `}</style>
+
+</section>
+
+
+        
 
     
     
@@ -440,9 +627,136 @@ export default function Home() {
 
       
 
-      <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center ">
+      {/* <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center ">
         <img src="/banner.webp" className="w-full h-full" />
-      </section>
+      </section> */}
+
+
+{/*------------- light theme banner very elegent --------------- */}
+   {/* <section className="relative w-full h-[650px] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#f7f9ff] via-white to-[#eef2ff]">
+
+   
+  <div className="absolute -top-20 -left-20 w-[350px] h-[350px] rounded-full bg-gradient-to-br from-[#6456f7]/50 to-[#8f86ff]/40 blur-3xl animate-pulse-slow"></div>
+  <div className="absolute -bottom-20 -right-10 w-[300px] h-[300px] rounded-full bg-gradient-to-tl from-[#ffb2e5]/40 to-[#ffd1f7]/40 blur-3xl animate-pulse-slow delay-300"></div>
+
+  
+  <div className="absolute inset-0 opacity-[0.09] bg-[linear-gradient(to_right,#0001_1px,transparent_1px),linear-gradient(to_bottom,#0001_1px,transparent_1px)] bg-[size:40px_40px]"></div>
+
+   
+  <div className="relative z-10 text-center px-6">
+    <h1 className="text-4xl md:text-6xl font-bold text-gray-900 leading-tight animate-fadeUp">
+      Superfast Hosting for  
+      <span className="block text-[#6456f7]">Modern Businesses</span>
+    </h1>
+
+    <p className="mt-6 text-gray-600 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed animate-fadeUp delay-200">
+      Experience next-generation performance, advanced security, and 
+      lightning-fast cloud infrastructure engineered for your growth.
+    </p>
+
+    <div className="mt-10 flex justify-center gap-6 animate-fadeUp delay-300">
+      <button className="px-8 py-3 rounded-full bg-[#6456f7] text-white font-semibold shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+        Get Started
+      </button>
+      <button className="px-8 py-3 rounded-full border border-gray-300 text-gray-700 bg-white hover:-translate-y-1 hover:shadow-md transition-all duration-300">
+        Explore Plans
+      </button>
+    </div>
+  </div>
+
+   
+  <style>{`
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fadeUp {
+      animation: fadeUp 0.9s ease-out forwards;
+    }
+    .animate-fadeUp.delay-200 {
+      animation-delay: 0.2s;
+    }
+    .animate-fadeUp.delay-300 {
+      animation-delay: 0.3s;
+    }
+
+    @keyframes pulse-slow {
+      0%, 100% { transform: scale(1); opacity: 0.55; }
+      50% { transform: scale(1.12); opacity: 0.9; }
+    }
+    .animate-pulse-slow {
+      animation: pulse-slow 6s ease-in-out infinite;
+    }
+  `}</style>
+</section> */}
+
+<section className="relative w-full h-[650px] flex items-center justify-center overflow-hidden bg-[#0a0a0f] text-white">
+
+      {/* GLOWING GRADIENT ORBS */}
+      <div className="absolute top-[-150px] left-[-150px] w-[380px] h-[380px] bg-purple-600 blur-[180px] opacity-50 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-[-180px] right-[-150px] w-[420px] h-[420px] bg-blue-500 blur-[200px] opacity-40 rounded-full animate-pulse-slow"></div>
+
+      {/* CENTER CONTENT */}
+      <div className="relative z-10 max-w-4xl mx-auto text-center px-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          Powering the Future of  
+          <br />
+          <span className="bg-gradient-to-r from-blue-500 via-purple-400 to-pink-500 bg-clip-text text-transparent">
+            Cloud Computing
+          </span>
+        </h1>
+
+        <p className="mt-6 text-gray-400 text-lg md:text-xl max-w-2xl mx-auto">
+          Lightning-fast hosting, 99.99% uptime, enterprise-grade security and fully optimized performance.
+        </p>
+
+        {/* BUTTONS */}
+        <div className="mt-10 flex items-center justify-center gap-6">
+          <button className="px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-white font-semibold hover:scale-105 transition-all shadow-lg shadow-blue-600/30">
+            Get Started
+          </button>
+
+          <button className="px-8 py-4 rounded-full border border-gray-600 text-gray-300 hover:bg-white/10 transition-all">
+            Explore Plans
+          </button>
+        </div>
+      </div>
+
+      {/* FLOATING LINES (FUTURISTIC EFFECT) */}
+      <div className="absolute inset-0 pointer-events-none opacity-20">
+        <div className="absolute top-32 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-600 to-transparent animate-slow-move"></div>
+        <div className="absolute bottom-32 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gray-600 to-transparent animate-slow-move-reverse"></div>
+      </div>
+
+      {/* CUSTOM ANIMATIONS */}
+      <style jsx>{`
+        .animate-pulse-slow {
+          animation: pulse 6s ease-in-out infinite;
+        }
+        @keyframes pulse {
+          0%, 100% { opacity: 0.35; }
+          50% { opacity: 0.6; }
+        }
+
+        .animate-slow-move {
+          animation: lineMove 6s linear infinite;
+        }
+        .animate-slow-move-reverse {
+          animation: lineMoveReverse 8s linear infinite;
+        }
+
+        @keyframes lineMove {
+          0% { transform: translateX(-20px); }
+          100% { transform: translateX(20px); }
+        }
+        @keyframes lineMoveReverse {
+          0% { transform: translateX(20px); }
+          100% { transform: translateX(-20px); }
+        }
+      `}</style>
+    </section>
+
+
 
  <HostingServices/>
        

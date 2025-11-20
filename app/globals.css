@@ -161,3 +161,50 @@ body {
   width: 200%;
   animation: marquee2 25s linear infinite;
 }
+
+
+
+/* ------------------------------------hero annimation -------------------- */
+
+@keyframes fadeUpSlow {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fadeUpSlow {
+  animation: fadeUpSlow 1.4s ease forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 1.2s ease forwards;
+}
