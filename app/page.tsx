@@ -67,6 +67,7 @@
 import PriceSection from "./PriceSection.jsx"
 import Testimonials from "./Testimonials.jsx";
 import FAQSection from "./FAQSection.jsx"
+import HostingServices from "./ServicesSection.jsx"
 export default function Home() {
   return (
     <main className="min-h-screen w-full bg-white">
@@ -438,6 +439,7 @@ export default function Home() {
         <img src="/banner.webp" className="w-full h-full" />
       </section>
 
+ <HostingServices/>
        
 
       <section className="w-full py-10 overflow-hidden bg-white">
@@ -718,6 +720,61 @@ export default function Home() {
     </section>
    
 
+  
+    <section className="w-full bg-[#05010f] py-24 px-6 md:px-16 lg:px-24">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        
+        {/* LEFT CONTENT */}
+        <div>
+          <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+            Free website migration, managed  by  
+             <span className="text-indigo-400"> Domainz</span>
+          </h2>
+
+          <p className="text-gray-300 mt-6 text-lg leading-relaxed">
+            Our experts handle the technical aspects of moving your website,
+            with data security at the utmost priority. Sit back and enjoy a
+            stress-free transition to our platform without any additional costs.
+          </p>
+
+          <button className="mt-10 px-10 py-4 rounded-full bg-indigo-500 text-white text-lg font-semibold hover:bg-indigo-600 transition-all duration-300 shadow-lg">
+            Start free migration
+          </button>
+        </div>
+
+        {/* RIGHT ARTWORK */}
+        <div className="relative flex justify-center">
+          <div className="rounded-3xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+            <img
+              src="https://img.freepik.com/free-photo/website-hosting-concept-with-woman-working-computer_23-2149406785.jpg"
+              className="w-[520px] h-[380px] object-cover"
+              alt="Banner"
+            />
+          </div>
+
+          {/* FLOATING COMPANY CARD */}
+          <div className="absolute bottom-6 -left-10 bg-white shadow-lg rounded-full px-6 py-3 flex items-center gap-3 animate-bounce-slow">
+            <div className="bg-indigo-500 text-white p-2 rounded-full text-sm">🌐</div>
+            <p className="text-sm font-medium">yourcompanyname.com</p>
+          </div>
+
+          {/* FLOATING MIGRATION CARD */}
+          <div className="absolute top-8 -right-10 bg-white shadow-xl rounded-2xl p-4 w-48 animate-float">
+            <img
+              src="/api/placeholder/150/150"
+              className="rounded-lg mb-3"
+              alt="Migration"
+            />
+            <p className="text-sm text-gray-600 font-medium flex items-center gap-2">
+              <span>📄</span> Free website migration
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+   
+
+
 
 <Testimonials/>
    <section className="relative w-full h-[650px] overflow-hidden flex items-center justify-center">
@@ -759,7 +816,11 @@ export default function Home() {
       <section className="w-full py-20 bg-gray-50 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-         Success stories of proven performance
+         Success stories of
+         <span className="text-indigo-600 ms-3">
+
+           proven performance
+         </span>
         </h2>
         <p className="text-gray-600 mt-4">
           Real stories from people growing their business using our hosting services.

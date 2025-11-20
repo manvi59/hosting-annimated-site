@@ -30,7 +30,11 @@ export default function FAQSection() {
         
         {/* HEADING */}
         <h2 className="text-5xl md:text-6xl font-bold text-black leading-tight">
-          Frequently asked <br /> questions
+          Frequently asked <br /> 
+           <span className="text-indigo-600">
+
+          questions
+           </span>
         </h2>
 
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-3 gap-16">

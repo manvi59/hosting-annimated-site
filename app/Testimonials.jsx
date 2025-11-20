@@ -49,7 +49,9 @@ export default function Testimonials() {
       <div className="text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-gray-800">
           Find your best design into us. We<br />
-          guarantee next success is yours!
+          guarantee next  <span className="text-indigo-600">
+            success is yours!
+            </span>
         </h2>
       </div>
 
