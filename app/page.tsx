@@ -68,6 +68,7 @@ import PriceSection from "./PriceSection.jsx"
 import Testimonials from "./Testimonials.jsx";
 import FAQSection from "./FAQSection.jsx"
 import HostingServices from "./ServicesSection.jsx"
+import Link from "next/link.js";
 export default function Home() {
   return (
     <main className="min-h-screen w-full bg-white">
@@ -76,10 +77,14 @@ export default function Home() {
         <div className="text-3xl font-bold">Wavespace</div>
 
         <ul className="flex items-center gap-10 text-lg">
+          <Link href={"/about"}>
           <li className="hover:text-black/60 cursor-pointer">Services ↗</li>
+          </Link>
           <li className="cursor-pointer">Case studies⁰⁹</li>
           <li className="cursor-pointer">Pricing</li>
+          <Link href={"/about"}>
           <li className="cursor-pointer">About us</li>
+          </Link> 
           <li className="cursor-pointer">Blog</li>
         </ul>
 
