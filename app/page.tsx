@@ -89,7 +89,7 @@ export default function Home() {
 
       {/* HERO SECTION */}
       {/* <section className="px-14 py-20 grid grid-cols-1 md:grid-cols-2 gap-10"> */}
-      <section className="px-14 py-20 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10"
+      <section className=" px-14 py-20 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-10 "
       style={{background:"#6456f7"}}
       >
         {/* LEFT SIDE TEXT */}
@@ -516,7 +516,7 @@ export default function Home() {
 
       {/* <section className="w-full py-20 bg-gradient-to-b from-[#0b0f19] to-[#0b0f19]/95 text-white"> */}
       <section className="w-full py-20 ">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+      <div className="max-w-9xl mx-auto px-6 lg:px-12">
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
@@ -529,37 +529,45 @@ export default function Home() {
         </div>
 
         {/* Feature Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 h-150">
           {[
             {
               title: "100% Dedicated CPU Cores",
-              desc: "No shared resources. Your CPU power is fully reserved for your workload."
+              desc: "No shared resources. Your CPU power is fully reserved for your workload.",
+              img:"https://img.freepik.com/free-vector/gradient-data-logo-template_23-2149203399.jpg"
             },
             {
               title: "High-Clock Speed Processors",
-              desc: "Optimized for databases, real-time apps, and computation-heavy workloads."
+              desc: "Optimized for databases, real-time apps, and computation-heavy workloads.",
+              img:"https://img.freepik.com/free-vector/creative-data-logo-template_23-2149212796.jpg",
             },
             {
               title: "NVMe SSD Storage",
-              desc: "Ultra-fast NVMe helps ensure lightning-fast read/write speed."
+              desc: "Ultra-fast NVMe helps ensure lightning-fast read/write speed.",
+              img:"https://img.freepik.com/premium-vector/creative-logo-design-technology-company-vector-illustration_1253202-17551.jpg",
             },
             {
               title: "DDOS + WAF Security",
-              desc: "Enterprise-grade protection against threats & attacks."
+              desc: "Enterprise-grade protection against threats & attacks.",
+              img:"https://img.freepik.com/premium-vector/cloud-server-logo-icon-design-illustration_106546-1715.jpg",
             },
             {
               title: "Unlimited Bandwidth",
-              desc: "No throttling. Perfect for large-scale users and expandable applications."
+              desc: "No throttling. Perfect for large-scale users and expandable applications.",
+              img:"https://img.freepik.com/premium-vector/logo-design-featuring-stack-books-symbolizing-knowledge-education-learning-company-generate-minimalist-sleek-design-brows-plug_585735-34203.jpg",
             },
             {
               title: "1-Click Scaling",
-              desc: "Instantly increase CPU, RAM, and storage without downtime."
+              desc: "Instantly increase CPU, RAM, and storage without downtime.",
+              img:"https://img.freepik.com/free-vector/gradient-data-logo-template_23-2149203402.jpg"
             }
           ].map((item, index) => (
             <div
               key={index}
               className="bg-white/5 backdrop-blur shadow-2xl rounded-2xl p-7 border border-white/10 hover:border-purple-500 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300"
+
             >
+              <img src={item?.img} height={100} width={100}/>
               <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-300 text-sm leading-relaxed">{item.desc}</p>
             </div>
@@ -621,7 +629,7 @@ export default function Home() {
 
  
     <section className="w-full py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
+      <div className="max-w-9xl mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT IMAGE WITH FLOATING CARDS */}
         <div className="relative flex justify-center">
@@ -763,9 +771,9 @@ export default function Home() {
         <div className="flex space-x-6 animate-marquee">
           
           {/* CARD 1 */}
-          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+          <div className="w-[450px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition h-[250px]">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <img src="/profile.jpg" className="w-30 h-30 rounded-full" />
               <div>
                 <h4 className="font-semibold text-gray-900">Israq Khan</h4>
                 <p className="text-gray-500 text-sm">CEO – Kodezi</p>
@@ -777,9 +785,9 @@ export default function Home() {
           </div>
 
           {/* CARD 2 */}
-          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+          <div className="w-[450px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition h-[250px]">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <img src="/profile.jpg" className="w-30 h-30 rounded-full" />
               <div>
                 <h4 className="font-semibold text-gray-900">Nick Fisher</h4>
                 <p className="text-gray-500 text-sm">Founder – Tournated</p>
@@ -791,9 +799,9 @@ export default function Home() {
           </div>
 
           {/* CARD 3 */}
-          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+          <div className="w-[450px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition h-[250px]">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <img src="/profile.jpg" className="w-30 h-30 rounded-full" />
               <div>
                 <h4 className="font-semibold text-gray-900">Abraham Ajayi</h4>
                 <p className="text-gray-500 text-sm">CEO – ActiveSync</p>
@@ -805,9 +813,9 @@ export default function Home() {
           </div>
 
           {/* CARD 4 */}
-          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+          <div className="w-[450px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition h-[250px]">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <img src="/profile.jpg" className="w-30 h-30 rounded-full" />
               <div>
                 <h4 className="font-semibold text-gray-900">Danny P</h4>
                 <p className="text-gray-500 text-sm">Director of Sales – Luxara</p>
@@ -819,9 +827,9 @@ export default function Home() {
           </div>
 
           {/* CARD 5 */}
-          <div className="min-w-[380px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition">
+          <div className="w-[450px] bg-white shadow-md rounded-2xl p-8 border hover:shadow-lg transition h-[250px]">
             <div className="flex items-center gap-3 mb-4">
-              <img src="/profile.jpg" className="w-12 h-12 rounded-full" />
+              <img src="/profile.jpg" className="w-30 h-30 rounded-full" />
               <div>
                 <h4 className="font-semibold text-gray-900">Mark Gawlyk</h4>
                 <p className="text-gray-500 text-sm">Co-founder – HBIT App</p>

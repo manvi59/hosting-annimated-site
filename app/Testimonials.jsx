@@ -54,7 +54,7 @@ export default function Testimonials() {
       </div>
 
       {/* Main Wrapper */}
-      <div className="max-w-7xl mx-auto px-6 overflow-hidden relative">
+      <div className="max-w-9xl mx-auto px-6 overflow-hidden relative">
         <div
           className="flex transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]"
           style={{ transform: `translateX(-${active * 100}%)` }}
