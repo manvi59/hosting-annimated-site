@@ -337,8 +337,11 @@ useEffect(() => {
           <p className="text-[#9CA3AF] text-lg mb-3">Web Hosting India</p>
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
-            Get 80% Off + Free <br />
-            Domain + 3 Months Free
+            {/* Get 80% Off + Free <br />
+            Domain + 3 Months Free */}
+           99.99% Uptime + Free <br />
+            Domain + 20-days
+Free Trial
           </h1>
 
           <ul className="space-y-4 text-lg">
@@ -353,7 +356,7 @@ useEffect(() => {
             </li>
           </ul>
 
-          <p className="text-4xl font-bold mt-10">₹129.00 <span className="text-lg">/mo</span></p>
+          <p className="text-4xl font-bold mt-10">₹5,000 <span className="text-lg">/mo</span></p>
 
           <p className="text-gray-300 mt-4">Offer ends soon</p>
 
@@ -390,11 +393,12 @@ useEffect(() => {
             bg-gradient-to-br from-white to-[#6E40FF] text-center drop-shadow-2xl" 
              
             >
-            80<span className="text-5xl align-top">%</span>
+            99
+ <span className="text-5xl align-top">%</span>
           </h1>
 
           <p className="text-center text-3xl mt-[-20px] font-semibold tracking-wider">
-            OFF
+           Uptime
           </p>
 
           {/* COUNTDOWN */}
@@ -472,7 +476,7 @@ useEffect(() => {
             </p>
 
             <h3 className="text-4xl font-bold mb-2">
-              $2,200<span className="text-lg font-medium">/monthly</span>
+              ₹5,000<span className="text-lg font-medium">/monthly</span>
             </h3>
             <p className="text-gray-500 mb-6">Cancel anytime</p>
 
@@ -488,21 +492,22 @@ useEffect(() => {
               <div className="flex items-center gap-3 mb-2">
                 <img src="/profile.jpg" className="w-10 h-10 rounded-full" />
                 <div>
-                  <p className="font-semibold">Isragh Khan</p>
+                  <p className="font-semibold">Sam Ebanezar</p>
                   <p className="text-xs text-gray-500">CEO at Kodezi</p>
                 </div>
               </div>
               <p className="text-gray-600 text-sm">
-                “Wavespace very reliable & we enjoy their designs!”
+                “Exceptional hosting service”
               </p>
             </div>
 
             {/* Features */}
             <ul className="mt-6 space-y-3 text-gray-700 text-sm">
-              <li>✔ DOMAINS HOSTING: 1</li>
-              <li>✔ DISK SPACE: 100 GB NVMe SPACE</li>
-              <li>✔ RAM: 2 GB</li>
-              <li>✔ BANDWIDTH: UNLIMITED</li>
+              <li>✔ CPU : Intel 14th Gen i3-14100 4.70GHz</li>
+              <li>✔ CPU Core : 4 </li>
+              <li>✔ Threads : 8 </li>
+              <li>✔   250 GB NVMe
+(gradable to 2 TB)</li>
             </ul>
           </div>
 
@@ -518,7 +523,7 @@ useEffect(() => {
             </p>
 
             <h3 className="text-4xl font-bold mb-2">
-              $4,400<span className="text-lg font-medium">/monthly</span>
+              ₹7,000<span className="text-lg font-medium">/monthly</span>
             </h3>
             <p className="text-gray-500 mb-6">Cancel anytime</p>
 
@@ -534,23 +539,24 @@ useEffect(() => {
               <div className="flex items-center gap-3 mb-2">
                 <img src="/profile.jpg" className="w-10 h-10 rounded-full" />
                 <div>
-                  <p className="font-semibold">Nick Fisher</p>
+                  <p className="font-semibold">QandQ Coversindia</p>
                   <p className="text-xs text-gray-500">
                     COO at a funded startup
                   </p>
                 </div>
               </div>
               <p className="text-gray-600 text-sm">
-                “Highly happy with design delivered by Wavespace!”
+                “Great value for the price!”
               </p>
             </div>
 
             {/* Features */}
             <ul className="mt-6 space-y-3 text-gray-700 text-sm">
-              <li>✔ DOMAINS HOSTING: 5</li>
-              <li>✔ DISK SPACE: Unlimited NVMe SPACE</li>
-              <li>✔ RAM: : 2 GB</li>
-              <li>✔ BANDWIDTH: UNLIMITED</li>
+              <li>✔ CPU : Intel 14th Gen i5-14400 4.70GHz</li>
+              <li>✔ CPU Core : 10 </li>
+              <li>✔ Threads : 16</li>
+              <li>✔ Disk Space: 250 GB NVMe
+(Upgrade 2 TB)</li>
             </ul>
           </div>
 
@@ -562,7 +568,10 @@ useEffect(() => {
               projects.
             </p>
 
-            <h3 className="text-4xl font-bold mb-2">Custom Project</h3>
+            {/* <h3 className="text-4xl font-bold mb-2">Custom Project</h3> */}
+              <h3 className="text-4xl font-bold mb-2">
+              ₹8,500<span className="text-lg font-medium">/monthly</span>
+            </h3>
             <p className="text-gray-500 mb-6">Full stack design team</p>
 
             <button className="w-full border py-3 rounded-full bg-white">
@@ -574,21 +583,22 @@ useEffect(() => {
               <div className="flex items-center gap-3 mb-2">
                 <img src="/profile.jpg" className="w-10 h-10 rounded-full" />
                 <div>
-                  <p className="font-semibold">Abraham Ajayi</p>
+                  <p className="font-semibold">Prachi sharma</p>
                   <p className="text-xs text-gray-500">CEO at ActiveSync</p>
                 </div>
               </div>
               <p className="text-gray-600 text-sm">
-                “Wavespace brought my idea to life. Amazing UX experience.”
+                “Ideal for business owners.”
               </p>
             </div>
 
             {/* Features */}
             <ul className="mt-6 space-y-3 text-gray-700 text-sm">
-              <li>✔ DOMAINS HOSTING: UNLIMITED</li>
-              <li>✔ DISK SPACE: Unlimited NVMe SPACE</li>
-              <li>✔ RAM: : 3 GB</li>
-              <li>✔ BANDWIDTH: UNLIMITED</li>
+              <li>✔ Intel 14th Gen i7-14700 5.4GHz</li>
+              <li>✔ CPU Core : 20 </li>
+              <li>✔ Threads : 28 </li>
+              <li>✔ Disk Space: 250 GB NVMe
+      (Upgradw 2 TB)</li>
             </ul>
           </div>
         </div>
@@ -712,9 +722,10 @@ useEffect(() => {
   <div className="relative max-w-7xl mx-auto">
     {/* Heading */}
     <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900 mb-16 tracking-tight">
-      Bold UX design, billion-dollar proof. We <br />
-      measure impact,{" "}
-      <span className="text-gray-500">not just ship pixels.</span>
+      {/* Bold UX design, billion-dollar proof. We <br />
+      measure impact,{" "} */}
+      Why you Can Choose domaniZ.in for the Dedicated Server Hosting
+      <span className="text-gray-500"> 24/7 Support .</span>
     </h1>
 
     {/* Stats Grid */}
@@ -1028,28 +1039,28 @@ useEffect(() => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 h-150">
           {[
             {
-              title: "100% Dedicated CPU Cores",
-              desc: "No shared resources. Your CPU power is fully reserved for your workload.",
+              title: "Latest Hardware",
+              desc: "Our Dedicated Servers come equipped with the latest hardware components, ensuring optimal performance, reliability.  ",
               img:"https://img.freepik.com/free-vector/gradient-data-logo-template_23-2149203399.jpg"
             },
             {
-              title: "High-Clock Speed Processors",
-              desc: "Optimized for databases, real-time apps, and computation-heavy workloads.",
+              title: "No Setup fee",
+              desc: "No additonal Setup Costs, just pay for a month and get your Dedicated Server ready.",
               img:"https://img.freepik.com/free-vector/creative-data-logo-template_23-2149212796.jpg",
             },
             {
-              title: "NVMe SSD Storage",
-              desc: "Ultra-fast NVMe helps ensure lightning-fast read/write speed.",
+              title: "NVMe Storage",
+              desc: "NVMe (Non-Volatile Memory Express), unlike traditional Hard drives, has a faster connectivity with storage device.",
               img:"https://img.freepik.com/premium-vector/creative-logo-design-technology-company-vector-illustration_1253202-17551.jpg",
             },
             {
-              title: "DDOS + WAF Security",
-              desc: "Enterprise-grade protection against threats & attacks.",
+              title: "No Upfront Long term commitment",
+              desc: "Having doubts? Just pay for a month and experience our dedicated server hosting without any long-term commitment. ",
               img:"https://img.freepik.com/premium-vector/cloud-server-logo-icon-design-illustration_106546-1715.jpg",
             },
             {
-              title: "Unlimited Bandwidth",
-              desc: "No throttling. Perfect for large-scale users and expandable applications.",
+              title: "7 Days Money back",
+              desc: "If you are not satisfied with our dedicated server hosting services within the first 7 days",
               img:"https://img.freepik.com/premium-vector/logo-design-featuring-stack-books-symbolizing-knowledge-education-learning-company-generate-minimalist-sleek-design-brows-plug_585735-34203.jpg",
             },
             {

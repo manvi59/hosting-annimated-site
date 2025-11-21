@@ -71,13 +71,13 @@ export default function PriceSection() {
             {/* Text Content */}
             <div className="max-w-xl">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight text-white">
-                AI Website Builder
-                <br /> Build Smarter
+                True Dedicated Servers
+                {/* <br /> Build Smarter */}
               </h1>
 
               <p className="text-white text-lg leading-relaxed mb-8">
-                Generate fully designed websites in seconds using advanced AI
-                tools — simple, clean, and incredibly fast.
+                Unlike other providers, No resource sharing, no virtualization, we provide you with true physical dedicated servers
+                 
               </p>
 
               <button className="px-10 py-4 bg-white hover:bg-white transition-all rounded-xl  text-lg font-semibold shadow-lg">
@@ -108,12 +108,11 @@ export default function PriceSection() {
             {/* Text content */}
             <div className="max-w-xl">
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-[#0A1A44]">
-                Ultra-Fast Cloud Hosting
+                cPanel/Webuzo Panel
               </h1>
 
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
-                Enjoy blazing performance with NVMe cloud servers, top-tier
-                caching, and global content delivery for unstoppable speed.
+                Optionally you can opt for cPanel or Webuzo Panel at additional cost for easier management of your server.
               </p>
 
               <button className="px-10 py-4 bg-blue-600 hover:bg-blue-700 transition-all rounded-xl text-white text-lg shadow-lg">
@@ -142,11 +141,10 @@ export default function PriceSection() {
           <div className="relative z-10 container mx-auto px-10 lg:px-20 py-20 flex flex-col lg:flex-row items-center justify-between">
             <div className="max-w-xl">
               <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
-                Advanced Security
+                Total Control
               </h1>
               <p className="text-gray-600 text-lg leading-relaxed mb-8 text-white">
-                Enjoy built-in DDoS protection, SSL, firewalls, and constant
-                monitoring for full-scale hosting security.
+               Full root/administrator access to your dedicated server allows you to customize configurations, install software, and manage security .
               </p>
 
               <button className="px-10 py-4 bg-white hover:bg-white  rounded-xl shadow-lg text-lg">
