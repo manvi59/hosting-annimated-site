@@ -70,6 +70,7 @@ import Testimonials from "./Testimonials.jsx";
 import FAQSection from "./FAQSection.jsx"
 import HostingServices from "./ServicesSection.jsx"
 import Link from "next/link.js";
+import Footer from "./footer.jsx"
 export default function Home() {
   return (
     <main className="min-h-screen w-full bg-white">
@@ -1236,76 +1237,9 @@ export default function Home() {
 
       <FAQSection/>
 
- <footer className="bg-[#0D0F15] text-gray-300 pt-16 pb-8 border-t border-white/10">
-      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
-
-        {/* Column 1 */}
-        <div>
-          <h3 className="text-2xl font-bold text-white tracking-tight">AtlasServe</h3>
-          <p className="mt-4 text-sm text-gray-400 leading-relaxed">
-            Secure, ultra-fast, and reliable hosting solutions — built for speed,
-            stability and premium performance.
-          </p>
-
-          {/* Social icons */}
-          <div className="flex space-x-4 mt-5">
-            <a href="#" className="hover:text-white transition">
-              <i className="ri-facebook-fill text-xl"></i>
-            </a>
-            <a href="#" className="hover:text-white transition">
-              <i className="ri-twitter-x-fill text-xl"></i>
-            </a>
-            <a href="#" className="hover:text-white transition">
-              <i className="ri-instagram-fill text-xl"></i>
-            </a>
-            <a href="#" className="hover:text-white transition">
-              <i className="ri-linkedin-fill text-xl"></i>
-            </a>
-          </div>
-        </div>
-
-        {/* Column 2 */}
-        <div>
-          <h4 className="text-lg font-semibold text-white mb-4">Hosting</h4>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-white transition">Shared Hosting</a></li>
-            <li><a href="#" className="hover:text-white transition">VPS Hosting</a></li>
-            <li><a href="#" className="hover:text-white transition">Cloud Hosting</a></li>
-            <li><a href="#" className="hover:text-white transition">WordPress Hosting</a></li>
-          </ul>
-        </div>
-
-        {/* Column 3 */}
-        <div>
-          <h4 className="text-lg font-semibold text-white mb-4">Company</h4>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-white transition">About Us</a></li>
-            <li><a href="#" className="hover:text-white transition">Privacy Policy</a></li>
-            <li><a href="#" className="hover:text-white transition">Terms & Conditions</a></li>
-            <li><a href="#" className="hover:text-white transition">Career</a></li>
-          </ul>
-        </div>
-
-        {/* Column 4 */}
-        <div>
-          <h4 className="text-lg font-semibold text-white mb-4">Support</h4>
-          <ul className="space-y-2 text-sm">
-            <li><a href="#" className="hover:text-white transition">Help Center</a></li>
-            <li><a href="#" className="hover:text-white transition">Report Issue</a></li>
-            <li><a href="#" className="hover:text-white transition">Refund Policy</a></li>
-            <li><a href="#" className="hover:text-white transition">Contact Support</a></li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Bottom Bar */}
-      <div className="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} AtlasServe Hosting. All rights reserved.
-      </div>
-    </footer>
 
 
-      
+    <Footer/>  
     </main>
   );
 }

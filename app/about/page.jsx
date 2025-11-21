@@ -1,6 +1,7 @@
 import PriceSection from "../PriceSection.jsx"
 import Testimonials from "../Testimonials.jsx";
 import "./about.css";
+import Footer from "../footer.jsx";
 export default function Home() {
 // const fun=()=>{
 //     console.log("hhhhhhhhhhhhhhhhh");
@@ -146,7 +147,8 @@ But honestly? We still build like it’s day one, fast, honest, human. Behind ev
                     {/* <img src="/mnt/data/2f36deef-fc95-4ce1"> */}
                 </div>
             </section>
-            
+            <Footer/>
         </>
+
     )
 }
