@@ -74,6 +74,7 @@ import { useEffect, useState } from "react";
 import BlackFridayCard from "./Hero.jsx"
 import DedicatedServerSection from "./DedicatedServer.jsx"
 import DedicatedHero from "./DedicatedServer.jsx"
+import Footer from "./footer.jsx"
 
 export default function Home() {
 
@@ -1410,10 +1411,10 @@ useEffect(() => {
 
       <FAQSection/>
 
- <footer className="bg-[#0D0F15] text-gray-300 pt-16 pb-8 border-t border-white/10">
+ {/* <footer className="bg-[#0D0F15] text-gray-300 pt-16 pb-8 border-t border-white/10">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
 
-        {/* Column 1 */}
+        
         <div>
           <h3 className="text-2xl font-bold text-white tracking-tight">AtlasServe</h3>
           <p className="mt-4 text-sm text-gray-400 leading-relaxed">
@@ -1421,7 +1422,7 @@ useEffect(() => {
             stability and premium performance.
           </p>
 
-          {/* Social icons */}
+          
           <div className="flex space-x-4 mt-5">
             <a href="#" className="hover:text-white transition">
               <i className="ri-facebook-fill text-xl"></i>
@@ -1438,7 +1439,7 @@ useEffect(() => {
           </div>
         </div>
 
-        {/* Column 2 */}
+        
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Hosting</h4>
           <ul className="space-y-2 text-sm">
@@ -1449,7 +1450,7 @@ useEffect(() => {
           </ul>
         </div>
 
-        {/* Column 3 */}
+        
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Company</h4>
           <ul className="space-y-2 text-sm">
@@ -1460,7 +1461,7 @@ useEffect(() => {
           </ul>
         </div>
 
-        {/* Column 4 */}
+        
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Support</h4>
           <ul className="space-y-2 text-sm">
@@ -1472,11 +1473,15 @@ useEffect(() => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
+     
       <div className="border-t border-white/10 mt-12 pt-6 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} AtlasServe Hosting. All rights reserved.
       </div>
-    </footer>
+    </footer> */}
+
+    <Footer/>
+
+    
 
 
       
