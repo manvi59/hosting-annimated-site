@@ -77,37 +77,75 @@ import DedicatedHero from "./DedicatedServer.jsx"
 
 export default function Home() {
 
-  const [time, setTime] = useState({
-      days: 0,
-      hrs: 0,
-      mins: 0,
-      secs: 0,
-    });
+  // const [time, setTime] = useState({
+  //     days: 0,
+  //     hrs: 0,
+  //     mins: 0,
+  //     secs: 0,
+  //   });
   
-    // COUNTDOWN TIMER
-    useEffect(() => {
-      const endDate = new Date();
-      endDate.setHours(endDate.getHours() + 25);
+  //   // COUNTDOWN TIMER
+  //   useEffect(() => {
+  //     const endDate = new Date();
+  //     endDate.setHours(endDate.getHours() + 25);
   
-      const timer = setInterval(() => {
-        const now = new Date().getTime();
-        const distance = endDate - now;
+  //     const timer = setInterval(() => {
+  //       const now = new Date().getTime();
+  //       const distance = endDate - now;
   
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hrs = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        );
-        const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const secs = Math.floor((distance % (1000 * 60)) / 1000);
+  //       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  //       const hrs = Math.floor(
+  //         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  //       );
+  //       const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  //       const secs = Math.floor((distance % (1000 * 60)) / 1000);
   
-        setTime({ days, hrs, mins, secs });
+  //       setTime({ days, hrs, mins, secs });
   
-        if (distance < 0) clearInterval(timer);
-      }, 1000);
+  //       if (distance < 0) clearInterval(timer);
+  //     }, 1000);
   
-      return () => clearInterval(timer);
-    }, []);
-  return (
+  //     return () => clearInterval(timer);
+  //   }, []);
+ 
+ const [time, setTime] = useState({
+  days: 0,
+  hrs: 0,
+  mins: 0,
+  secs: 0,
+});
+
+useEffect(() => {
+  // Create end date
+  const endDateObj = new Date();
+  endDateObj.setHours(endDateObj.getHours() + 25);
+
+  // Convert to timestamp (IMPORTANT)
+  const endDate = endDateObj.getTime();
+
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = endDate - now;
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hrs = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
+    const mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const secs = Math.floor((distance % (1000 * 60)) / 1000);
+
+    if (distance <= 0) {
+      setTime({ days: 0, hrs: 0, mins: 0, secs: 0 });
+      clearInterval(timer);
+      return;
+    }
+
+    setTime({ days, hrs, mins, secs });
+  }, 1000);
+
+  return () => clearInterval(timer);
+}, []);
+ return (
     <main className="min-h-screen w-full bg-white">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between px-14 py-6" style={{background:"black", color:"white"}}>
