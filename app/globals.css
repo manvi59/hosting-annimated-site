@@ -208,3 +208,17 @@ body {
 .animate-slideInRight {
   animation: slideInRight 1.2s ease forwards;
 }
+
+
+ .neon-border {
+          box-shadow:
+            0 0 20px rgba(0, 128, 255, 0.6),
+            0 0 40px rgba(128, 0, 255, 0.6),
+            inset 0 0 20px rgba(0, 128, 255, 0.3),
+            inset 0 0 40px rgba(128, 0, 255, 0.3);
+            border:3px solid rgb(3, 3, 190);
+        }
+
+.powerful-border{
+  box-shadow: 0 0 20px #f2f3f499, 0 0 40px #ccb4e599, inset 0 0 20px #0080ff4d, inset 0 0 40px #8000ff4d;
+}
