@@ -72,7 +72,8 @@ body {
 
 .stack-container {
   position: relative;
-  height: 650vh;
+  /* height: 650vh; */
+  height: 350vh;
   scroll-behavior: smooth;
 }
 
