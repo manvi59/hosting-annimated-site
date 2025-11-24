@@ -53,7 +53,7 @@
 //             <span className="text-green-600 text-2xl">✔</span>
 //             7-day money-back guarantee
 //           </div>
-
+ 
 //           {/* WhatsApp Floating */}
 //           <div className="fixed bottom-7 left-7">
 //             <Image

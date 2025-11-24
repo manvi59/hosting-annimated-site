@@ -150,7 +150,8 @@ useEffect(() => {
     <main className="min-h-screen w-full bg-white">
       {/* NAVBAR */}
       <nav className="flex items-center justify-between px-14 py-6" style={{background:"black", color:"white"}}>
-        <div className="text-3xl font-bold">Wavespace</div>
+        {/* <div className="text-3xl font-bold">Wavespace</div> */}
+        <div className="text-3xl font-bold">Domainz</div>
 
         <ul className="flex items-center gap-10 text-lg">
           <Link href={"/service"}>
@@ -394,7 +395,7 @@ Free Trial
              
             >
             99
- <span className="text-5xl align-top">%</span>
+        <span className="text-5xl align-top">%</span>
           </h1>
 
           <p className="text-center text-3xl mt-[-20px] font-semibold tracking-wider">
