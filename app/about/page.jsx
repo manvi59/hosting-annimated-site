@@ -168,7 +168,7 @@ export default function AboutPage() {
             </Link>
 
           <div className="hidden md:flex items-center gap-8 text-base text-slate-700">
-            <a className="hover:text-slate-900" href="#">Services</a>
+            <a className="hover:text-slate-900" href="/service-page">Services</a>
             <a className="hover:text-slate-900" href="#">Case Studies</a>
             <a className="hover:text-slate-900" href="#">Pricing</a>
             <a className="hover:text-slate-900" href="#">About</a>

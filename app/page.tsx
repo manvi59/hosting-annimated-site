@@ -154,7 +154,7 @@ useEffect(() => {
         <div className="text-3xl font-bold">Domainz</div>
 
         <ul className="flex items-center gap-10 text-lg">
-          <Link href={"/service"}>
+          <Link href={"/service-page"}>
           <li className="hover:text-black/60 cursor-pointer">Services ↗</li>
           </Link>
           <li className="cursor-pointer">Case studies⁰⁹</li>
