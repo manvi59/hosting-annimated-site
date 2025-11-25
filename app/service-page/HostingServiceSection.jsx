@@ -35,7 +35,7 @@ className={`w-full max-w-[1400px] mx-auto flex items-center gap-[50px] p-[60px_4
             {String(index + 1).padStart(2, "0")}
           </span>
           <span className="text-[#111]">{item}</span>
-          <span className="text-[22px] text-[#111] font-medium">↗</span>
+          <span className="text-[22px] text-[#111] ">↗</span>
         </div>
       ))}
     </div>
