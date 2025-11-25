@@ -166,7 +166,7 @@ export default function AboutPage() {
             
           <div className="text-2xl font-extrabold">Domainz</div>
             </Link>
-
+ 
           <div className="hidden md:flex items-center gap-8 text-base text-slate-700">
             <a className="hover:text-slate-900" href="/service-page">Services</a>
             <a className="hover:text-slate-900" href="#">Case Studies</a>
