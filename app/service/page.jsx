@@ -54,8 +54,7 @@ export default function ServicePage() {
         src="https://cdn.prod.website-files.com/6655d16113e6966ef4eb1041/6835c4229130cd923555f69b_Mobile%20App%20Design-p-1080.webp"
         reverse={false}
       />
-      
-      
+     
     </div>
   );
 }
