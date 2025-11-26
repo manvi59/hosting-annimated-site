@@ -160,10 +160,13 @@ export default function Home() {
 
         <ul className="flex items-center gap-10 text-lg">
           <Link href={"/service-page"}>
-            <li className="hover:text-black/60 cursor-pointer">Services ↗</li>
+            <li className=" cursor-pointer">Services ↗</li>
           </Link>
           <li className="cursor-pointer">Case studies⁰⁹</li>
-          <li className="cursor-pointer">Pricing</li>
+          <Link  href={"#pricing"}>
+          
+          <li className="cursor-pointer" >Pricing</li>
+          </Link>
           <Link href={"/about"}>
             <li className="cursor-pointer">About us</li>
           </Link>
@@ -441,7 +444,7 @@ export default function Home() {
       {/* <HeroOffer/> */}
       {/* <BlackFridayCard/> */}
 
-      <section className="w-full py-20 px-6 md:px-14 bg-white">
+      <section id="pricing" className="w-full py-20 px-6 md:px-14 bg-white">
         {/* Heading */}
         <h1 className="text-4xl md:text-5xl font-semibold text-center leading-tight text-gray-900 mb-10">
           Featured Hosting Plans <br />

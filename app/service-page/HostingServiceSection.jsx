@@ -13,7 +13,7 @@ className={`w-full max-w-[1400px] mx-auto flex items-center gap-[50px] p-[60px_4
     <img
       src={src}
       alt={title}
-      className="w-full max-w-[550px] rounded-xl shadow-lg"
+      className="w-full max-w-[550px] rounded-xl "
     />
   </div>
 

@@ -1,6 +1,8 @@
 import HostingServiceSection from "./HostingServiceSection";
 import Footer from "../footer.jsx";
 import Link from "next/link";
+import ServiceHero from "./ServiceHero.jsx";
+import Feature from "./Feature.jsx";
 
 export default function HostingServices() {
   return (
@@ -28,7 +30,7 @@ export default function HostingServices() {
         </button>
       </nav>
 
-      <section
+      {/* <section
         className="relative px-14 py-24 grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-16 overflow-hidden"
         style={{ background: "#6456f7" }}
       >
@@ -61,43 +63,7 @@ export default function HostingServices() {
         </div>
 
         <div className="relative mt-16 md:mt-0 z-10 animate-slideInRight">
-          {/* <p className="text-lg text-white/90 leading-relaxed mb-6">
-      Wavespace is a global UX agency that helps brands scale with fast,
-      high-performance digital experiences.
-    </p>
-
-   
-    <div className="flex items-center gap-3 mb-6">
-      <div className="flex -space-x-3">
-        <img
-          src="/photo1.avif"
-          className="w-10 h-10 rounded-full border-2 border-white"
-        />
-        <img
-          src="/photo1.avif"
-          className="w-10 h-10 rounded-full border-2 border-white"
-        />
-        <img
-          src="/photo1.avif"
-          className="w-10 h-10 rounded-full border-2 border-white"
-        />
-      </div>
-      <p className="text-white/90">Loved by 500+ Founders</p>
-    </div>
-
-    
-    <div className="flex items-center gap-3">
-      <img src="/cloud.jpg" className="w-10 h-10 animate-float" />
-
-      <div className="flex">
-        {Array.from({ length: 5 }).map((_, i) => (
-          <span key={i} className="text-yellow-300 text-2xl">★</span>
-        ))}
-      </div>
-      <p className="text-white">13 Reviews</p>
-    </div> */}
-
-          {/* <img src="https://img.freepik.com/premium-vector/server-room-concept-illustration_114360-20647.jpg" /> */}
+        
           <img
             src="/server-room.png"
             height={500}
@@ -105,7 +71,9 @@ export default function HostingServices() {
             className="h-full w-full"
           />
         </div>
-      </section>
+      </section> */}
+      <ServiceHero/>
+      
 
          <section className="w-full py-10 overflow-hidden bg-white">
         <div className="flex gap-16 items-center scroll-animation whitespace-nowrap">
@@ -243,6 +211,8 @@ export default function HostingServices() {
           reverse={true}
         />
       </div>
+
+          {/* <Feature/> */}
 
       <Footer />
     </>
